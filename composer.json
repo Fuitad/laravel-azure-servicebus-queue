@@ -22,9 +22,9 @@
     ],
     "require": {
         "php": ">=5.6.4",
-        "illuminate/container": "5.2.*",
-        "illuminate/support": "5.2.*",
-        "illuminate/encryption": "5.2.*",
+        "illuminate/container": "5.3.*",
+        "illuminate/support": "5.3.*",
+        "illuminate/encryption": "5.3.*",
         "microsoft/windowsazure": "^0.4"
     },
     "autoload": {

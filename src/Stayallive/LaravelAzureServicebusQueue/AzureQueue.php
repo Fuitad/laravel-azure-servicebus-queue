@@ -136,4 +136,16 @@ class AzureQueue extends Queue implements QueueContract
         return $this->azure;
     }
 
+    /**
+     * Get the size of the queue.
+     *
+     * @param  string  $queue
+     * @return int
+     */
+    public function size($queue = null)
+    {
+        $queueInfo = $this->azure->getQueue($this->getQueue($queue));
+        return $queueInfo->getMessageCount();
+    }
+
 }
